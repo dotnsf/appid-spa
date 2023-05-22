@@ -24,7 +24,11 @@ AppID による認証機能を加えた SPA サンプル
 
     - 同アプリケーションの `discoveryEndpoint` および `clientId` 情報の取得
 
-    - `Allowed Callback URLs` および `Allowed Logout URLs` にアプリケーション運用時の URL を指定（試験的に利用する場合は `http://localhost:3000` を指定）
+    - `Allowed Callback URLs` および `Allowed Logout URLs` にアプリケーション運用時の URL を指定
+    
+      - 試験的に利用する場合は `http://localhost:3000` を指定
+
+      - 本番環境の場合は **オリジン** を指定（GitHub Pages なら `https://dotnsf.github.io`）
 
     - `Access Token Expiration` を設定（試験的に利用する場合はすぐ無効になるよう 600 など短めに設定）
 
